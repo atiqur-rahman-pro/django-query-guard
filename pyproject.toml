@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "django-query-guard"
+version = "0.1.0"
+description = "Detect and prevent N+1 queries and query bloat in Django applications with Pytest integration."
+readme = "README.md"
+authors = [
+    { name = "Atiqur Rahman", email = "rahman.atiqur.pro@gmail.com" }
+]
+license = { text = "MIT" }
+keywords = ["django", "pytest", "n+1", "database", "performance", "testing", "orm"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: Django",
+    "Framework :: Pytest",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Testing",
+]
+dependencies = [
+    "django>=4.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-django>=4.8.0",
+]
+
+[project.entry-points.pytest11]
+django_query_guard = "django_query_guard.pytest_plugin"
+
+[project.urls]
+Homepage = "https://github.com/atiqur-rahman-pro/django-query-guard"
+Repository = "https://github.com/atiqur-rahman-pro/django-query-guard"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/django_query_guard"]
