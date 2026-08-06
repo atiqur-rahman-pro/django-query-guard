@@ -1,0 +1,40 @@
+[
+  {
+    "timestamp": "2026-08-07T01:51:01.277082",
+    "summary": {
+      "total_tests": 1,
+      "passed": 1,
+      "failed": 0,
+      "total_queries": 1,
+      "n_plus_one_count": 0
+    },
+    "tests": [
+      {
+        "test_name": "tests/test_pytest_plugin.py::test_pytest_marker_within_limit",
+        "query_count": 1,
+        "max_queries": 2,
+        "n_plus_one_detected": false,
+        "status": "passed"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-08-07T01:51:19.164421",
+    "summary": {
+      "total_tests": 1,
+      "passed": 1,
+      "failed": 0,
+      "total_queries": 1,
+      "n_plus_one_count": 0
+    },
+    "tests": [
+      {
+        "test_name": "tests/test_pytest_plugin.py::test_pytest_marker_within_limit",
+        "query_count": 1,
+        "max_queries": 2,
+        "n_plus_one_detected": false,
+        "status": "passed"
+      }
+    ]
+  }
+]
