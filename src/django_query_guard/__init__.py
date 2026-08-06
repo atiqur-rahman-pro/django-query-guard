@@ -13,7 +13,7 @@ from .core import query_guard
 from .detector import NPlusOneDetector, normalize_sql
 from .exceptions import NPlusOneQueryError, QueryCountExceededError, QueryGuardError
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __author__ = "Atiqur Rahman <rahman.atiqur.pro@gmail.com>"
 __all__ = [
     "query_guard",
