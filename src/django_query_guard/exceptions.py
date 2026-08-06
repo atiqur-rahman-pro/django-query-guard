@@ -1,4 +1,13 @@
-"""Custom exceptions and formatted error reporters for django-query-guard."""
+"""django-query-guard: Custom exceptions and formatted error reporters.
+
+Author: Atiqur Rahman
+Role: Software QA Engineer | SDET | Test Automation Architect | Microsoft Contributor | Open Source Contributor
+Location: Dhaka, Bangladesh
+Email: rahman.atiqur.pro@gmail.com
+LinkedIn: https://www.linkedin.com/in/atiqur-rahman-pro
+GitHub: https://github.com/atiqur-rahman-pro
+License: MIT License
+"""
 from __future__ import annotations
 
 from typing import Any
