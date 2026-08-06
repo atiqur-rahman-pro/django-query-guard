@@ -7,7 +7,7 @@
 
 ---
 
-[![PyPI version](https://img.shields.io/badge/pypi-v0.1.2-blue.svg)](https://pypi.org/project/django-query-guard/)
+[![PyPI version](https://img.shields.io/badge/pypi-v0.2.0-blue.svg)](https://pypi.org/project/django-query-guard/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python Versions](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue)](https://pypi.org/project/django-query-guard/)
 [![Django Versions](https://img.shields.io/badge/django-4.0%2B-green)](https://djangoproject.com/)
@@ -83,6 +83,9 @@ If your endpoint accidentally runs 101 queries instead of 2, **Pytest fails inst
 - 🛡️ **Zero Heavy Dependencies**: Built purely on Django's native database execution wrapper and standard library.
 - ⚡ **Ultra-Fast**: Sub-millisecond execution overhead (< 1ms per test).
 - 🐍 **Python 3.10+ & Django 4.0+ Compatible**: Works out-of-the-box with all modern Django versions.
+- 📊 **HTML Report Generation**: Beautiful dark-themed HTML reports with summary cards, test results table, and SQL query details.
+- 🔔 **CI/CD GitHub Actions Ready**: Ready-made workflow template for automatic N+1 detection on every Pull Request.
+- 📈 **Query Count Trend Tracking**: JSON-based run history with regression/improvement detection across Pytest runs.
 
 ---
 
@@ -168,6 +171,77 @@ books = [author.books.all() for author in authors]
 authors = Author.objects.prefetch_related("books").all()
 books = [author.books.all() for author in authors]
 ```
+
+---
+
+## 📊 HTML Report Generation (New in v0.2.0)
+
+Generate a premium dark-themed HTML report after every Pytest run:
+
+```bash
+pytest --query-guard-report=report.html
+```
+
+The report includes:
+- **Summary Cards**: Total tests, passed/failed counts, total queries, and N+1 detections at a glance.
+- **Test Results Table**: Per-test query count, max allowed, N+1 status, and duration.
+- **SQL Query Details**: Full SQL breakdown for failed tests with exact query text and execution time.
+
+---
+
+## 📈 Query Count Trend Tracking (New in v0.2.0)
+
+Track query performance across multiple Pytest runs with automatic regression detection:
+
+```bash
+pytest --query-guard-trend=.query_guard_history.json
+```
+
+Terminal output after each run:
+```text
+========================================================================
+===================== QUERY GUARD TREND COMPARISON =====================
+========================================================================
+  Current Run:  3 queries across 5 tests
+  Previous Run: 30 queries across 5 tests
+
+  [IMPROVEMENT] Query Delta: -27 queries
+========================================================================
+```
+
+Combine both flags for full reporting:
+```bash
+pytest --query-guard-report=report.html --query-guard-trend=.query_guard_history.json
+```
+
+---
+
+## 🔔 CI/CD GitHub Actions Integration (New in v0.2.0)
+
+Copy the ready-made workflow file to your project:
+
+```bash
+mkdir -p .github/workflows
+cp query_guard_ci.yml .github/workflows/
+```
+
+Or add to your existing workflow:
+
+```yaml
+- name: Run Query Guard Tests
+  run: |
+    pip install django-query-guard
+    pytest --query-guard-report=report.html --query-guard-trend=.query_guard_history.json -v
+
+- name: Upload Query Guard Report
+  if: always()
+  uses: actions/upload-artifact@v4
+  with:
+    name: query-guard-report
+    path: report.html
+```
+
+This ensures **every Pull Request is automatically checked** for N+1 query regressions before merging!
 
 ---
 
