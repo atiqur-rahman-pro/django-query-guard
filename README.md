@@ -1,5 +1,12 @@
 # django-query-guard 🛡️
 
+### Created by:
+**Atiqur Rahman**  
+*Software QA Engineer | SDET | Test Automation Architect | Microsoft Contributor | Open Source Contributor*  
+📍 Dhaka, Bangladesh | ✉️ [rahman.atiqur.pro@gmail.com](mailto:rahman.atiqur.pro@gmail.com) | 🌐 [LinkedIn](https://www.linkedin.com/in/atiqur-rahman-pro) | 🐙 [GitHub Profile](https://github.com/atiqur-rahman-pro)
+
+---
+
 [![PyPI version](https://img.shields.io/badge/pypi-v0.1.0-blue.svg)](https://pypi.org/project/django-query-guard/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python Versions](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue)](https://pypi.org/project/django-query-guard/)
@@ -107,13 +114,6 @@ def test_user_loop():
         User.objects.get(id=user_id)
 ```
 
-**Pytest Error Output:**
-```text
-django_query_guard.exceptions.NPlusOneQueryError: N+1 Query pattern detected! 
-Normalized query executed 2 times:
-  SELECT * FROM auth_user WHERE id = ?
-```
-
 ---
 
 ### 3. Using as a Context Manager (`with query_guard(...)`)
@@ -174,34 +174,10 @@ books = [author.books.all() for author in authors]
 
 This project is licensed under the **MIT License**.
 
-```text
-MIT License
-
-Copyright (c) 2026 Atiqur Rahman
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO MECHANICAL, FITNESS FOR A PARTICULAR
-PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
-HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
-ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-```
-
 ---
 
-## 🤝 Contributing & Feedback
+## 👤 Author & Maintainer
 
-Contributions, issues, and feature requests are welcome!  
-Feel free to check the [issues page](https://github.com/atiqur-rahman-pro/django-query-guard/issues).
-
-Made with ❤️ by [Atiqur Rahman](https://github.com/atiqur-rahman-pro).
+**Atiqur Rahman**  
+*Software QA Engineer | SDET | Test Automation Architect | Microsoft Contributor | Open Source Contributor*  
+📍 Dhaka, Bangladesh | ✉️ [rahman.atiqur.pro@gmail.com](mailto:rahman.atiqur.pro@gmail.com) | 🌐 [LinkedIn](https://www.linkedin.com/in/atiqur-rahman-pro) | 🐙 [GitHub Profile](https://github.com/atiqur-rahman-pro)
