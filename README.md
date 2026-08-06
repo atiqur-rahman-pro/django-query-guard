@@ -7,7 +7,7 @@
 
 ---
 
-[![PyPI version](https://img.shields.io/badge/pypi-v0.1.0-blue.svg)](https://pypi.org/project/django-query-guard/)
+[![PyPI version](https://img.shields.io/badge/pypi-v0.1.2-blue.svg)](https://pypi.org/project/django-query-guard/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python Versions](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue)](https://pypi.org/project/django-query-guard/)
 [![Django Versions](https://img.shields.io/badge/django-4.0%2B-green)](https://djangoproject.com/)
@@ -15,6 +15,33 @@
 
 > **Stop N+1 database queries before they hit production.**  
 > `django-query-guard` is an ultra-fast, zero-dependency Python & Pytest plugin that automatically detects N+1 queries and enforces strict query count limits in your Django test suites and backend code.
+
+---
+
+## 📦 Installation (2 Ways to Install)
+
+You can install `django-query-guard` using either of the two official methods below:
+
+### 1️⃣ Standard Installation via PyPI (Recommended)
+
+Install the official stable package directly from the [PyPI Repository](https://pypi.org/project/django-query-guard/):
+
+```bash
+pip install django-query-guard
+```
+
+For development and testing tools (Pytest & Pytest-Django):
+```bash
+pip install django-query-guard[dev]
+```
+
+### 2️⃣ Direct Installation via GitHub (Latest Bleeding-Edge Version)
+
+Install the latest main branch version directly from the [GitHub Source Repository](https://github.com/atiqur-rahman-pro/django-query-guard):
+
+```bash
+pip install git+https://github.com/atiqur-rahman-pro/django-query-guard.git
+```
 
 ---
 
@@ -56,22 +83,6 @@ If your endpoint accidentally runs 101 queries instead of 2, **Pytest fails inst
 - 🛡️ **Zero Heavy Dependencies**: Built purely on Django's native database execution wrapper and standard library.
 - ⚡ **Ultra-Fast**: Sub-millisecond execution overhead (< 1ms per test).
 - 🐍 **Python 3.10+ & Django 4.0+ Compatible**: Works out-of-the-box with all modern Django versions.
-
----
-
-## 📦 Installation
-
-Install `django-query-guard` via pip:
-
-```bash
-pip install django-query-guard
-```
-
-For development and testing with Pytest:
-
-```bash
-pip install django-query-guard[dev]
-```
 
 ---
 
