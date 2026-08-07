@@ -261,8 +261,17 @@ This project is licensed under the **MIT License**.
 
 ---
 
-## 👤 Author & Maintainer
+## 👤 Author Identity & Connect
 
-**Atiqur Rahman**  
-*Software QA Engineer | SDET | Test Automation Architect | Microsoft Contributor | Open Source Contributor*  
-📍 Dhaka, Bangladesh | ✉️ [rahman.atiqur.pro@gmail.com](mailto:rahman.atiqur.pro@gmail.com) | 🌐 [LinkedIn](https://www.linkedin.com/in/atiqur-rahman-pro) | 🐙 [GitHub Profile](https://github.com/atiqur-rahman-pro)
+<div align="center">
+
+### **Designed & Engineered by Atiqur Rahman**
+*Software QA Engineer | SDET | Test Automation Architect | Microsoft Contributor | Open Source Contributor*
+
+[![Live Portfolio](https://img.shields.io/badge/PORTFOLIO-ATIQUR--RAHMAN--PRO.GITHUB.IO-2088FF?style=for-the-badge&logo=githubpages&logoColor=white)](https://atiqur-rahman-pro.github.io/)
+[![Live Web CV](https://img.shields.io/badge/WEB_CV-ATIQUR--RAHMAN--PRO.GITHUB.IO%2FCV-2ea44f?style=for-the-badge&logo=githubpages&logoColor=white)](https://atiqur-rahman-pro.github.io/cv/)
+[![YouTube Channel](https://img.shields.io/badge/YOUTUBE-SUBSCRIBE_NOW-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@Digital_Digest_Live)  
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-CONNECT_ME-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/atiqur-rahman-pro)
+
+</div>
+
