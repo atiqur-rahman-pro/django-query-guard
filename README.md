@@ -222,7 +222,7 @@ Copy the ready-made workflow file to your project:
 
 ```bash
 mkdir -p .github/workflows
-cp query_guard_ci.yml .github/workflows/
+cp query_guard_ci.yml.example .github/workflows/query_guard_ci.yml
 ```
 
 Or add to your existing workflow:
