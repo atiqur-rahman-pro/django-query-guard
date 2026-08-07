@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "django-query-guard"
-version = "0.2.0"
+version = "0.2.1"
 description = "Detect and prevent N+1 queries and query bloat in Django applications with Pytest integration."
 readme = { file = "README.md", content-type = "text/markdown" }
 authors = [
@@ -15,6 +15,13 @@ keywords = ["django", "pytest", "n+1", "database", "performance", "testing", "or
 classifiers = [
     "Development Status :: 4 - Beta",
     "Framework :: Django",
+    "Framework :: Django :: 4.0",
+    "Framework :: Django :: 4.1",
+    "Framework :: Django :: 4.2",
+    "Framework :: Django :: 5.0",
+    "Framework :: Django :: 5.1",
+    "Framework :: Django :: 6.0",
+    "Framework :: Django :: 6.1",
     "Framework :: Pytest",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
@@ -23,10 +30,11 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "Topic :: Software Development :: Testing",
 ]
 dependencies = [
-    "django>=4.0",
+    "django>=4.0,<=6.1",
 ]
 
 [project.optional-dependencies]

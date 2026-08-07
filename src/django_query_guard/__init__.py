@@ -15,7 +15,7 @@ from .exceptions import NPlusOneQueryError, QueryCountExceededError, QueryGuardE
 from .report import QueryGuardReportData, HTMLReportGenerator, write_html_report
 from .trend import TrendSnapshot, TrendComparison, save_trend_snapshot, compare_with_previous
 
-__version__ = "0.2.0"
+__version__ = "0.2.1"
 __author__ = "Atiqur Rahman <rahman.atiqur.pro@gmail.com>"
 __all__ = [
     "query_guard",

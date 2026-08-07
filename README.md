@@ -7,10 +7,10 @@
 
 ---
 
-[![PyPI version](https://img.shields.io/badge/pypi-v0.2.0-blue.svg)](https://pypi.org/project/django-query-guard/)
+[![PyPI version](https://img.shields.io/badge/pypi-v0.2.1-blue.svg)](https://pypi.org/project/django-query-guard/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python Versions](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue)](https://pypi.org/project/django-query-guard/)
-[![Django Versions](https://img.shields.io/badge/django-4.0%2B-green)](https://djangoproject.com/)
+[![Python Versions](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13%20%7C%203.14-blue)](https://pypi.org/project/django-query-guard/)
+[![Django Versions](https://img.shields.io/badge/django-4.0%20%7C%205.x%20%7C%206.0%20%7C%206.1-green)](https://djangoproject.com/)
 [![Pytest Integration](https://img.shields.io/badge/pytest-supported-brightgreen)](https://docs.pytest.org/)
 
 > **Stop N+1 database queries before they hit production.**  
